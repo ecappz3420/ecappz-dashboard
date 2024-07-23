@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 const Card = (props) => {
     return (
         <>
-            <div className="card border-0 shadow mb-3">
+            <div className="card border-0 shadow-sm mb-3">
                 <div className="card-body">
                     <div className="d-flex justify-content-between align-items-center">
                         <h4 className={props.className === "Success" ? "text-success" : props.className === "Danger" ? "text-danger" : props.className === "Warning" ? "text-warning" : props.className === "Primary" ? "text-primary" : "bg-success-subtle"}>₹ {props.amount}</h4>
